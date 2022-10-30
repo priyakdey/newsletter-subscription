@@ -7,6 +7,8 @@ services:
     image: mongo
     container_name: priyakdey.com-mongodb
     restart: always
+    ports:
+      - 27017:27017
     volumes:
       - /Users/priydey/dev/github.com/priyakdey/newsletter-subscription/data:/data/db
     environment:
